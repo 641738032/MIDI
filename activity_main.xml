@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zhuxiaolin.audiofinal.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MIDI KeyBoard"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="241dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@android:color/background_light"
+                android:text="C"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/btnCup"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+                android:layout_width="177dp"
+                android:layout_height="45dp"
+                android:background="@android:color/background_dark"
+                android:backgroundTint="@android:color/background_dark" />
+
+            <Button
+                android:id="@+id/btnD"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@android:color/background_light"
+                android:textColor="@android:color/holo_green_light" />
+
+            <Button
+                android:id="@+id/btnDup"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+                android:layout_width="177dp"
+                android:layout_height="45dp"
+                android:background="@android:color/background_dark"
+                android:backgroundTint="@android:color/background_dark" />
+
+            <Button
+                android:id="@+id/btnE"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@android:color/background_light"
+                android:textColor="@android:color/holo_green_light" />
+
+            <Button
+                android:id="@+id/btnF"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@android:color/background_light"
+                android:textColor="@android:color/holo_green_light" />
+
+            <Button
+                android:id="@+id/btnFup"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+                android:layout_width="177dp"
+                android:layout_height="45dp"
+                android:background="@android:color/background_dark"
+                android:backgroundTint="@android:color/background_dark" />
+
+            <Button
+                android:id="@+id/btnG"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@android:color/background_light"
+                android:textColor="@android:color/holo_green_light" />
+
+            <Button
+                android:id="@+id/btnGup"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+                android:layout_width="177dp"
+                android:layout_height="45dp"
+                android:background="@android:color/background_dark"
+                android:backgroundTint="@android:color/background_dark" />
+
+            <Button
+                android:id="@+id/btnA"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@android:color/background_light"
+                android:textColor="@android:color/holo_green_light" />
+
+            <Button
+                android:id="@+id/btnAup"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+                android:layout_width="177dp"
+                android:layout_height="45dp"
+                android:background="@android:color/background_dark"
+                android:backgroundTint="@android:color/background_dark" />
+
+            <Button
+                android:id="@+id/btnB"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:backgroundTint="@android:color/background_light"
+                android:textColor="@android:color/holo_green_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                style="@android:style/Widget.Holo.Light.Button.Toggle"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:textOff="OFF"
+                android:textOn="ON" />
+            <!--<Button-->
+                <!--android:id="@+id/btnCenter"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:backgroundTint="@android:color/background_light"-->
+                <!--android:text="钢琴中央C区"-->
+                <!--android:textColor="@android:color/darker_gray" />-->
+            <ToggleButton
+                android:id="@+id/btnCenter"
+                style="@android:style/Widget.Holo.Light.Button.Toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:textOff="钢琴中央C区 OFF"
+                android:textOn="钢琴中央C区 ON" />
+            <!--<Button-->
+                <!--android:id="@+id/btnNext"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:backgroundTint="@android:color/background_light"-->
+                <!--android:text="钢琴高八度"-->
+                <!--android:textColor="@android:color/darker_gray" />-->
+            <ToggleButton
+                android:id="@+id/btnNext"
+                style="@android:style/Widget.Holo.Light.Button.Toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:textOff="钢琴高八度 OFF"
+                android:textOn="钢琴高八度 ON" />
+            <!--<Button-->
+                <!--android:id="@+id/btnBox"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:backgroundTint="@android:color/background_light"-->
+                <!--android:text="八音盒C4"-->
+                <!--android:textColor="@android:color/darker_gray" />-->
+            <ToggleButton
+                android:id="@+id/btnBox"
+                style="@android:style/Widget.Holo.Light.Button.Toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:textOff="八音盒C4 OFF"
+                android:textOn="八音盒C4 ON" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音量："
+                android:id="@+id/textViewAudio"
+                android:textColor="@android:color/darker_gray" />/>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBarAudio"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
